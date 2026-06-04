@@ -15,6 +15,10 @@
   box-sizing:border-box;
 }
 
+html{
+  scroll-behavior:smooth;
+}
+
 :root{
   --red-dark:#8b1a1a;
   --red:#c0392b;
@@ -323,6 +327,23 @@ section{
   line-height:1.7;
 }
 
+.google-reviews-link{
+  display:inline-block;
+  color:var(--green-dark);
+  font-weight:600;
+  text-decoration:none;
+  padding:12px 28px;
+  border:2px solid var(--green);
+  border-radius:50px;
+  transition:background .2s,color .2s;
+  cursor:pointer;
+}
+
+.google-reviews-link:hover{
+  background:var(--green);
+  color:white;
+}
+
 /* Contact */
 .contact-section{
   text-align:center;
@@ -529,16 +550,20 @@ footer p{
   <div class="reviews-grid">
     <div class="review-card">
       <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p class="review-text">"Amazing tacos and great service! The birria tacos are the best I've ever had."</p>
+      <p class="review-text">"Beef tostada, Street tacos Carnitas and Chorizo large portions of QUALITY MEAT."</p>
     </div>
     <div class="review-card">
       <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p class="review-text">"Best quesabirria in town. The consomme is so rich and flavorful."</p>
+      <p class="review-text">"Excellent place to eat, good service and the tacos are delicious."</p>
     </div>
     <div class="review-card">
       <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-      <p class="review-text">"Fresh ingredients and authentic flavors. Feels like eating in Mexico!"</p>
+      <p class="review-text">"Absolutely delicious Birria taco combo, very friendly staff and great ambiance!"</p>
     </div>
+  </div>
+
+  <div style="text-align:center;margin-top:32px;">
+    <a href="#reviews" class="google-reviews-link" onclick="window.open('https://www.google.com/maps/search/La+Finca+Mexican+Restaurant','_blank');return false;">View all Google reviews</a>
   </div>
 </section>
 
