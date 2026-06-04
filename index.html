@@ -168,6 +168,55 @@ section{
   font-size:1.05rem;
 }
 
+.hours-section{
+  margin-top:48px;
+  max-width:480px;
+  margin-left:auto;
+  margin-right:auto;
+  background:white;
+  border-radius:16px;
+  padding:32px;
+  box-shadow:var(--shadow);
+  border-top:4px solid var(--red);
+}
+
+.hours-title{
+  text-align:center;
+  color:var(--red-dark);
+  font-size:1rem;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:20px;
+}
+
+.hours-grid{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.hours-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:8px 0;
+  border-bottom:1px solid #f0f0f0;
+}
+
+.hours-row:last-child{
+  border-bottom:none;
+}
+
+.hours-day{
+  color:var(--text-mid);
+  font-weight:500;
+}
+
+.hours-time{
+  color:var(--green-dark);
+  font-weight:600;
+}
+
 /* Menu */
 .menu-section{
   background:var(--warm-white);
@@ -371,12 +420,26 @@ footer p{
       <p>$10 - $20</p>
     </div>
     <div class="info-card">
-      <h3>Status</h3>
-      <p>Open Now</p>
-    </div>
-    <div class="info-card">
       <h3>Services</h3>
       <p>Pickup | Delivery | Dine-In</p>
+    </div>
+  </div>
+
+  <div class="hours-section">
+    <h3 class="hours-title">Hours of Operation</h3>
+    <div class="hours-grid">
+      <div class="hours-row">
+        <span class="hours-day">Monday - Thursday</span>
+        <span class="hours-time">11:00 AM - 9:00 PM</span>
+      </div>
+      <div class="hours-row">
+        <span class="hours-day">Friday - Saturday</span>
+        <span class="hours-time">11:00 AM - 9:30 PM</span>
+      </div>
+      <div class="hours-row">
+        <span class="hours-day">Sunday</span>
+        <span class="hours-time">11:00 AM - 8:30 PM</span>
+      </div>
     </div>
   </div>
 </section>
