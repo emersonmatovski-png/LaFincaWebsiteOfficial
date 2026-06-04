@@ -379,6 +379,24 @@ section{
   font-weight:500;
 }
 
+.doordash-btn{
+  display:inline-block;
+  margin-top:6px;
+  padding:10px 20px;
+  background:#ff3008;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:600;
+  font-size:.85rem;
+  transition:background .2s,transform .2s;
+}
+
+.doordash-btn:hover{
+  background:#e02b06;
+  transform:translateY(-2px);
+}
+
 /* Footer */
 footer{
   background:var(--green-dark);
@@ -443,7 +461,7 @@ footer p{
     </div>
     <div class="info-card">
       <h3>Services</h3>
-      <p>Pickup | Delivery | Dine-In</p>
+      <p>Pickup | Dine-In</p>
     </div>
   </div>
 
@@ -575,15 +593,15 @@ footer p{
   <div class="contact-grid">
     <div class="contact-item">
       <h4>Phone</h4>
-      <p>Call for Orders</p>
+      <p><a href="tel:+15175792681" style="color:var(--text-mid);text-decoration:none;font-weight:600;">(517) 579-2681</a></p>
     </div>
     <div class="contact-item">
       <h4>Pickup</h4>
       <p>Ready in 15-20 min</p>
     </div>
-    <div class="contact-item">
+    <div class="contact-item doordash-item">
       <h4>Delivery</h4>
-      <p>Available Daily</p>
+      <a href="https://www.doordash.com/store/la-finca-mexican-restaurant" target="_blank" rel="noopener" class="doordash-btn">Order on DoorDash</a>
     </div>
   </div>
 </section>
